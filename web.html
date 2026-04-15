@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon Clone</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#e3e6e6;
+}
+
+/* Navbar */
+.navbar{
+    background:#131921;
+    color:white;
+    display:flex;
+    align-items:center;
+    padding:12px 20px;
+    gap:20px;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#ff9900;
+}
+
+.search{
+    flex:1;
+    display:flex;
+}
+
+.search input{
+    width:100%;
+    padding:10px;
+    border:none;
+    outline:none;
+    border-radius:4px 0 0 4px;
+}
+
+.search button{
+    background:#febd69;
+    border:none;
+    padding:10px 15px;
+    cursor:pointer;
+    border-radius:0 4px 4px 0;
+}
+
+.nav-links{
+    display:flex;
+    gap:20px;
+    font-size:14px;
+}
+
+/* Menu */
+.menu{
+    background:#232f3e;
+    color:white;
+    padding:10px 20px;
+    display:flex;
+    gap:20px;
+    font-size:14px;
+}
+
+/* Hero */
+.hero{
+    background:url('https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da') center/cover no-repeat;
+    height:350px;
+}
+
+/* Products */
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:20px;
+    margin-top:-100px;
+}
+
+.card{
+    background:white;
+    padding:15px;
+    border-radius:8px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:5px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#007185;
+    margin-bottom:10px;
+}
+
+.card button{
+    display:block;
+    width:100%;
+    margin-top:5px;
+    padding:8px;
+    border:none;
+    background:#ffd814;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.card button:hover{
+    background:#f7ca00;
+}
+
+/* Footer */
+.footer{
+    background:#232f3e;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="logo">amazon</div>
+
+    <div class="search">
+        <input type="text" placeholder="Search Amazon">
+        <button>🔍</button>
+    </div>
+
+    <div class="nav-links">
+
+        <div class="sign in"><a href="sigin in.html">Sign in</a></div>
+        <div>Returns & Orders</div>
+        <div><a href="cart.html">Cart 🛒</a></div>
+    </div>
+</div>
+
+<!-- Menu -->
+<div class="menu">
+    <div>☰ All</div>
+    <div>Today's Deals</div>
+    <div>Customer Service</div>
+    <div>Gift Cards</div>
+    <div>Sell</div>
+</div>
+
+<!-- Hero -->
+<div class="hero"></div>
+
+<!-- Products -->
+<div class="products">
+
+    <div class="card">
+        <h3>Electronics</h3>
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Electronics">
+        <p>Shop now</p>
+        <a href="eletronic.html">
+            <button>Electronics</button>
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>Fashion</h3>
+        <img src="https://images.unsplash.com/photo-1523381294911-8d3cead13475" alt="Fashion">
+        <p>See more</p>
+        <a href="women.html">
+            <button>Women's Fashion</button>
+        </a>
+        <a href="men.html">
+            <button>Men's Fashion</button>
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>Home & Kitchen</h3>
+        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511" alt="Home">
+        <p>Explore</p>
+        <a href="home.html">
+            <button>Home & Kitchen</button>
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>Beauty Picks</h3>
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" alt="Beauty">
+        <p>Discover</p>
+        <a href="beaty.html">
+            <button>Beauty Picks</button>
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>Books & Audible</h3>
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" alt="Books">
+        <p>Find your next read</p>
+        <a href="books.html">
+            <button>Books & Audible</button>
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>jewellery</h3>
+        <img src="C:\Users\st\Desktop\web\j.jpeg" alt="Jewellery">
+        <p>pertty</p>
+        <a href="jewellery.html">
+            <button>Jewellery</button>
+        </a>
+    </div>
+ <div class="card">
+        <h3>teddy bear</h3>
+        <img src="C:\Users\st\Desktop\web\teddy.jpeg" alt="teddy bear">
+        <p>Gear up</p>
+        <a href="teddybear.html">
+            <button>Teddy Bear</button>
+        </a>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    © 2026 Amazon Clone | Made for Practice
+</div>
+
+</body>
+</html>
